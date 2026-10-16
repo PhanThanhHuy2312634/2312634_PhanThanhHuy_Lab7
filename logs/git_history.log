@@ -1,0 +1,11 @@
+﻿commit 2de2aa8f79ecf84a56b90c5ed67ecc19797a9d83
+Author: 2312634 - Phan Thanh Huy <2312634@dlu.edu.vn>
+Date:   Fri Oct 16 15:58:58 2026 +0700
+
+    docs: Cap nhat git_history.log cho minh chung nop bai
+
+commit 587813bab700986cedc7a4f42facbb7d574034ab
+Author: 2312634 - Phan Thanh Huy <2312634@dlu.edu.vn>
+Date:   Fri Oct 16 15:58:38 2026 +0700
+
+    feat: Khoi tao du an Lab 7 - YummyApp CI/CD, Mocking va minh chung viet tay
