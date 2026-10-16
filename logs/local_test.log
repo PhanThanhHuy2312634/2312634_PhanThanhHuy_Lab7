@@ -1,0 +1,37 @@
+YummyApp Lab 7 - local validation log
+Python: 3.14.7 (GitHub Actions: 3.11)
+
+$ C:\Users\nd119\AppData\Local\Programs\Python\Python314\python.exe -m flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+0
+Exit code: 0
+
+$ C:\Users\nd119\AppData\Local\Programs\Python\Python314\python.exe -m coverage run --source=yummy_app,gps_service -m unittest discover -s . -p test_*.py
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.007s
+
+OK
+Exit code: 0
+
+$ C:\Users\nd119\AppData\Local\Programs\Python\Python314\python.exe -m coverage report -m
+Name             Stmts   Miss  Cover   Missing
+----------------------------------------------
+gps_service.py       3      0   100%
+yummy_app.py        30      0   100%
+----------------------------------------------
+TOTAL               33      0   100%
+Exit code: 0
+
+$ C:\Users\nd119\AppData\Local\Programs\Python\Python314\python.exe -m coverage html -d coverage_html
+Wrote HTML report to coverage_html\index.html
+Exit code: 0
+
+$ C:\Users\nd119\AppData\Local\Programs\Python\Python314\python.exe -m coverage report --fail-under=80
+Name             Stmts   Miss  Cover
+------------------------------------
+gps_service.py       3      0   100%
+yummy_app.py        30      0   100%
+------------------------------------
+TOTAL               33      0   100%
+Exit code: 0
+
